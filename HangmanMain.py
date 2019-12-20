@@ -29,6 +29,7 @@ def main():
         sys.exit()
     words_file = open("HangmanWords.txt")
     word_bank = [line.rstrip() for line in words_file]
+    words_file.close()
 
     while True:
         print("Hello, welcome to hangman. Please enter any letter to start or enter 'exit' to leave.")
